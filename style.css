@@ -1,0 +1,130 @@
+ body{
+  background-color: hsl(233, 47%, 7%);
+  height: 100vh;
+  
+ }
+ .gcontainer{
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .Container{
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+  }
+  .Pimage,.Ptexte{
+    height: 350px;
+    width: 400px;
+  }
+  .Pimage{
+    position: relative;
+  }
+  .Ptexte{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    justify-content: space-around;
+  }
+  .filtre{
+    background-color: hsl(277, 64%, 61%, 0.45);
+    height: 350px;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border-radius: 0px 10px 10px 0px;
+  }
+  .Pth{
+    color: hsl(0, 0%, 100%);
+    margin: 30px 50px 0px 50px;
+    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+  }
+  .Pth1{
+    color: hsl(277, 64%, 61%);
+  }
+  .Ptp{
+    color: hsla(0, 0%, 100%, 0.6);
+    margin: 0px 50px;
+    text-align: left;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  
+  h3{
+    margin: 0px;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+  .unorderline{
+    display: flex;
+    padding: 0px 50px 20px 50px;
+    margin-bottom: 0px;
+    justify-content: flex-start;
+    width: 300px;
+  }
+  .company{
+    margin: 0px;
+  }
+  img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 10px 10px 0px;
+  }
+  li{
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  @media screen and (max-width:500px){
+    .Container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .unorderline{
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+    }
+    .Ptexte{
+      width: 300px;
+      height: 500px;
+    }
+    .Pth{
+      padding-top: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+    .Ptp{
+      margin: 10px;
+      font-size: 13px;
+      text-align: center;
+    }
+    .Pimage{
+      height: 200px;
+      width: 300px;
+    }
+    .filtre , img{
+      height: 200px;
+      width: 300px;
+      border-radius: 10px 10px 0px 0px ;
+    }
+    h3{
+      font-size: 22px;
+      text-align: center;
+    }
+    li{
+      margin: 0px;
+    }
+  }
